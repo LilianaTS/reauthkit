@@ -8,7 +8,7 @@
 
 import {_val, _form} from "@netuno/server-types";
 
-_form.createIfNotExists(
+_form.sync(
 	_val.map()
 		.set("big", false)
 		.set("control_active", true)
@@ -31,10 +31,11 @@ _form.createIfNotExists(
 		.set("title", "Configura\u00E7\u00F5es")
 		.set("uid", "b881807d-7f60-45b9-888d-81695755a1ea")
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"b881807d-7f60-45b9-888d-81695755a1ea",
 	_val.map()
 		.set("colspan", 0)
+		.set("description", "")
 		.set("firebase", "")
 		.set("group_id", 0)
 		.set("height", 0)
@@ -61,10 +62,11 @@ _form.createComponentIfNotExists(
 		.set("x", 1)
 		.set("y", 1)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"b881807d-7f60-45b9-888d-81695755a1ea",
 	_val.map()
 		.set("colspan", 0)
+		.set("description", "")
 		.set("firebase", "")
 		.set("group_id", 0)
 		.set("height", 0)

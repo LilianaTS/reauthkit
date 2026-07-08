@@ -8,7 +8,7 @@
 
 import {_val, _form} from "@netuno/server-types";
 
-_form.createIfNotExists(
+_form.sync(
 	_val.map()
 		.set("big", false)
 		.set("control_active", true)
@@ -30,7 +30,7 @@ _form.createIfNotExists(
 		.set("title", "Amigo")
 		.set("uid", "a2a5e2fa-aa71-43ec-a9cb-a96e80a32f96")
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"a2a5e2fa-aa71-43ec-a9cb-a96e80a32f96",
 	_val.map()
 		.set("colspan", 0)
@@ -61,7 +61,7 @@ _form.createComponentIfNotExists(
 		.set("x", 2)
 		.set("y", 2)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"a2a5e2fa-aa71-43ec-a9cb-a96e80a32f96",
 	_val.map()
 		.set("colspan", 0)
@@ -92,7 +92,7 @@ _form.createComponentIfNotExists(
 		.set("x", 2)
 		.set("y", 1)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"a2a5e2fa-aa71-43ec-a9cb-a96e80a32f96",
 	_val.map()
 		.set("colspan", 0)
@@ -123,7 +123,7 @@ _form.createComponentIfNotExists(
 		.set("x", 1)
 		.set("y", 1)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"a2a5e2fa-aa71-43ec-a9cb-a96e80a32f96",
 	_val.map()
 		.set("colspan", 0)

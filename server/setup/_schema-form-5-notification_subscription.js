@@ -8,7 +8,7 @@
 
 import {_val, _form} from "@netuno/server-types";
 
-_form.createIfNotExists(
+_form.sync(
 	_val.map()
 		.set("big", false)
 		.set("control_active", true)
@@ -31,7 +31,7 @@ _form.createIfNotExists(
 		.set("title", "Subscri\u00E7\u00E3o")
 		.set("uid", "fc133003-d7c5-4b71-a7a4-89ae29bed993")
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"fc133003-d7c5-4b71-a7a4-89ae29bed993",
 	_val.map()
 		.set("colspan", 0)
@@ -62,7 +62,7 @@ _form.createComponentIfNotExists(
 		.set("x", 1)
 		.set("y", 4)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"fc133003-d7c5-4b71-a7a4-89ae29bed993",
 	_val.map()
 		.set("colspan", 0)
@@ -93,7 +93,7 @@ _form.createComponentIfNotExists(
 		.set("x", 1)
 		.set("y", 2)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"fc133003-d7c5-4b71-a7a4-89ae29bed993",
 	_val.map()
 		.set("colspan", 0)
@@ -124,7 +124,7 @@ _form.createComponentIfNotExists(
 		.set("x", 1)
 		.set("y", 3)
 );
-_form.createComponentIfNotExists(
+_form.syncField(
 	"fc133003-d7c5-4b71-a7a4-89ae29bed993",
 	_val.map()
 		.set("colspan", 0)
