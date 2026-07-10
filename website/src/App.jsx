@@ -57,6 +57,7 @@ export default function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const [api, contextHolder] = notification.useNotification();
+  globalNotification.api(api);
 
   useEffect(() => {
     _auth.config({
