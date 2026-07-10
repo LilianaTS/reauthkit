@@ -46,6 +46,7 @@ function useProfile() {
   return {
     data,
     set: (data) => {
+      unloaded = false;
       dispatch(profileLoadAction(data));
     },
     load,
