@@ -136,7 +136,7 @@ export default function Register(props) {
               </Form.Item> }
             { Config.authProviders().microsoft &&
                 <Form.Item>
-                  <Button href={`${servicePrefix}/_auth_provider/login/microsoft`} icon={<FaWindows />}>Entrar com o Microsoft</Button>
+                  <Button href={`${servicePrefix}/_auth_provider/register/microsoft`} icon={<FaWindows />}>Entrar com o Microsoft</Button>
                 </Form.Item> }
             { Config.authProviders().facebook &&
                 <Form.Item>
