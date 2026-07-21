@@ -1,4 +1,4 @@
-import {_config, _env, _url, _req, _val, _header, _app, _auth, _log} from "@netuno/server-types";
+import {_config, _env, _url, _req, _val, _header, _app, _auth, _log, _push} from "@netuno/server-types";
 
 _config.set("_lang", _config.get("_lang:default"));
 
@@ -30,9 +30,10 @@ if (_env.is("dev")) {
 if (_app.isFolder(websiteBuildPath)) {
   const websiteConfigFile = _app.file(`${websiteBuildPath}/reauthkit.js`);
   if (_app.configReloaded() || !websiteConfigFile.exists()) {
+    const websiteSettings = _app.settings.getValues("website", _val.map())
     const websiteConfig = _val.map()
-      .set("services", _app.settings.getValues("services", _val.map()))
-      .set("websocket", _app.settings.getValues("websocket", _val.map()))
+      .set("services", websiteSettings.getValues("services", _val.map()))
+      .set("websocket", websiteSettings.getValues("websocket", _val.map()))
       .set("push", _val.map().set("key", _push.init().applicationServerKey()))
       .set(
         "auth",

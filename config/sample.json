@@ -9,12 +9,14 @@
     ]
   },
   "settings": {
-    "services": {
-      "prefix": "http://localhost:9000/services"
-    },
-    "websocket": {
-      "url": "ws://localhost:9000/ws/private/",
-      "servicesPrefix": "/services"
+    "website": {
+      "services": {
+        "prefix": "http://localhost:9000/services"
+      },
+      "websocket": {
+        "url": "ws://localhost:9000/ws/private/",
+        "servicesPrefix": "/services"
+      }
     },
     "public": {}
   },
