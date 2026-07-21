@@ -17,12 +17,12 @@ export default function RecoverModal(props) {
 
   function onFinish(values) {
     setSubmitting(true);
-    const { mail } = values;
+    const { email } = values;
     _service({
       method: 'POST',
       url: 'recovery',
       data: {
-        mail,
+        email,
       },
       success: (response) => {
         if (response.json.result) {
@@ -88,7 +88,7 @@ export default function RecoverModal(props) {
       >
         <Form.Item
           label="Endereço de Mail"
-          name="mail"
+          name="email"
           rules={[
             { type: 'email', message: 'O e-mail inserido não é válido.' },
             { required: true, message: 'Insira o e-mail.' }
